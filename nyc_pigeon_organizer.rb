@@ -6,7 +6,7 @@ def nyc_pigeon_organizer(data)
       pigeons.each do |pigeon|
         new_hash[pigeon] ||= {}
         new_hash[pigeon][trait] ||= []
-        new_hash[pigeon][trait] << option.to_s
+        new_hash[pigeon][trait].push(option.to_s)
       end
     end
   end
